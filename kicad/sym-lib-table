@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name ads8867)(type Legacy)(uri ${KIPRJMOD}/ads8867.lib)(options "")(descr ""))
+  (lib (name amps)(type Legacy)(uri ${KIPRJMOD}/amps.lib)(options "")(descr ""))
+  (lib (name max6033)(type Legacy)(uri ${KIPRJMOD}/max6033.lib)(options "")(descr ""))
+  (lib (name lt1028)(type Legacy)(uri ${KIPRJMOD}/lt1028.lib)(options "")(descr ""))
+)
