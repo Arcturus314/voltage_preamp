@@ -221,17 +221,6 @@ F 3 "" H 9700 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+4V #PWR0109
-U 1 1 60900970
-P 8950 1250
-F 0 "#PWR0109" H 8950 1100 50  0001 C CNN
-F 1 "+4V" H 8965 1423 50  0000 C CNN
-F 2 "" H 8950 1250 50  0001 C CNN
-F 3 "" H 8950 1250 50  0001 C CNN
-	1    8950 1250
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0110
 U 1 1 60900FD6
 P 8950 1550
@@ -286,11 +275,6 @@ F 3 "~" H 9150 1400 50  0001 C CNN
 	1    9150 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8750 1250 8950 1250
-Connection ~ 8950 1250
-Wire Wire Line
-	8950 1250 9150 1250
 Wire Wire Line
 	8750 1550 8950 1550
 Connection ~ 8950 1550
@@ -782,8 +766,6 @@ Wire Wire Line
 Wire Wire Line
 	5400 1050 5400 550 
 Wire Wire Line
-	5400 550  6600 550 
-Wire Wire Line
 	6600 550  6600 1150
 Wire Wire Line
 	6600 1150 6200 1150
@@ -850,4 +832,17 @@ Wire Wire Line
 Connection ~ 4650 1150
 Wire Wire Line
 	4650 1150 4650 1200
+Text Label 5050 1150 1    50   ~ 0
+4VRES
+Wire Wire Line
+	8750 1250 9150 1250
+Text Label 8950 1250 1    50   ~ 0
+4VRES
+Text Notes 6700 750  0    50   ~ 0
+no resistor in feedback path as 60nA input current  -> 1uV offset. We don’t care about this. \nLower noise more important
+Wire Wire Line
+	5400 550  6600 550 
+NoConn ~ 2950 1700
+NoConn ~ 2950 3550
+NoConn ~ 2950 5400
 $EndSCHEMATC
