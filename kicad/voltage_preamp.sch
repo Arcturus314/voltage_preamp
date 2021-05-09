@@ -569,7 +569,7 @@ U 1 1 6095012D
 P 5900 4250
 F 0 "J5" H 6000 4225 50  0000 L CNN
 F 1 "Conn_Coaxial" H 6000 4134 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Molex_73251-2200_Horizontal" H 5900 4250 50  0001 C CNN
+F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 5900 4250 50  0001 C CNN
 F 3 " ~" H 5900 4250 50  0001 C CNN
 	1    5900 4250
 	1    0    0    -1  
@@ -840,7 +840,7 @@ U 1 1 609618E4
 P 6350 2100
 F 0 "J7" H 6458 2281 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 6458 2190 50  0000 C CNN
-F 2 "Connector_Coaxial:SMA_Molex_73251-2200_Horizontal" H 6350 2100 50  0001 C CNN
+F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 6350 2100 50  0001 C CNN
 F 3 "~" H 6350 2100 50  0001 C CNN
 	1    6350 2100
 	1    0    0    -1  
@@ -926,4 +926,6 @@ Wire Wire Line
 	10250 1550 10650 1550
 Text Notes 7100 1050 0    50   ~ 0
 NOTE: 9V -> 5V, 4V -> 2.5V
+Text Notes 700  3500 0    50   ~ 0
+Amphenol 112659
 $EndSCHEMATC
